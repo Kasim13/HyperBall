@@ -14,4 +14,9 @@ public class HealthPowerUp : PowerUpBase
         CharacterManager.Instance.Player.GetComponent<IHealable>().Heal();
         Dispose();
     }
+
+    public override IEnumerator ExecuteCo()
+    {
+        throw new System.NotImplementedException();
+    }
 }

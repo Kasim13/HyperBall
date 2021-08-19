@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/*
+
 public class GameData
 {
+    public float BoostSpeedTimer=1.5f;
+    public float IsBoostSpeed;
 }
-*/
+
 
 public class GameManager : Singleton<GameManager>
 {
-    //public GameData GameData = new GameData();
+    public GameData GameData = new GameData();
 
     private bool isGameStarted;
     public bool IsGameStarted { get { return isGameStarted; } private set { isGameStarted = value; } }

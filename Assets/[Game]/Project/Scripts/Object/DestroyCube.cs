@@ -11,7 +11,9 @@ public class DestroyCube : MonoBehaviour
 
     IEnumerator SelfDestruct()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(0.8f);
+        this.gameObject.GetComponent<Collider>().isTrigger = true;
+        yield return new WaitForSeconds(1f);
         Destroy(gameObject);
     }
 }

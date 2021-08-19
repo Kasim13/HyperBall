@@ -4,7 +4,6 @@ using UnityEngine;
 
 public abstract class CollectableBase : MonoBehaviour, ICollectable
 {
-
     private void OnEnable()
     {
         if (Managers.Instance == null)
