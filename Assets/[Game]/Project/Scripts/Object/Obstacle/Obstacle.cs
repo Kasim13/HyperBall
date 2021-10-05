@@ -10,7 +10,7 @@ public class Obstacle : MonoBehaviour
 
         if (IDamageable != null)
         {
-            IDamageable.Damage();         
+            IDamageable.Damage();
         }
         this.gameObject.GetComponent<Collider>().isTrigger = false;
     }

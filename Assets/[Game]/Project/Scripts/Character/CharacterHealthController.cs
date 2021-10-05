@@ -56,7 +56,8 @@ public class CharacterHealthController : MonoBehaviour, IDamageable, IHealable
     public void Damage()
     {
         if (CurrentHealth >= MinHealth)
-        { CurrentHealth -= 0.4f; }
+        { CurrentHealth -= 0.4f;
+        }
 
         if (CurrentHealth < MinHealth)
         { CurrentHealth = MinHealth; }
